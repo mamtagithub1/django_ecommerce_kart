@@ -1,0 +1,16 @@
+SuperUser
+username:djangoadmin
+mail-id:mamtahere@gmail.com
+password:mamta12
+Models of category:- In django it takes models in plural form with s in it,like category will be
+displayed as categorys in admin panel
+TO RESOLVE  ABOVE ERROR USE CLASS META IN MODEL
+NOTE:- execute with run command/if still no changes display use migrate command ,then run command
+Introduction to Custom User Model::--
+Q1. Why to use cutomize user model?
+Ans: In general for login there use mail-id and password,but in django by default(by-default user model) it have useername&password option ,which is not convienent/right way to ask for login(e.g: advanced application via;e-commerce ), Cuz of which will make a custom user model to ask for mail-id instead of username in django to login
+
+Qa.what does normalize_email method does is?
+Ans: when you entered data in capitalize/uppercase it will change it into lowercase means normalize it ,the data inserted in the required fields
+
+AFTER creating a custom user Model we need to tell in settings.py file that we are using custom user model
